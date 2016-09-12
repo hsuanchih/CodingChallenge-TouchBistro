@@ -14,8 +14,8 @@ import CoreData
 
 extension Floor {
 
-    @NSManaged var uuid: String?
-    @NSManaged var name: String?
-    @NSManaged var tables: NSSet?
+    @NSManaged var uuid: String
+    @NSManaged var name: String
+    @NSManaged var tables: Set<Table>?
 
 }

@@ -14,6 +14,17 @@
 		7282943D1D8752A1009EB19A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7282943C1D8752A1009EB19A /* Assets.xcassets */; };
 		728294401D8752A1009EB19A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7282943E1D8752A1009EB19A /* LaunchScreen.storyboard */; };
 		7282944B1D8752A2009EB19A /* CoreDataSerializeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282944A1D8752A2009EB19A /* CoreDataSerializeTests.swift */; };
+		728294601D8755B0009EB19A /* Table+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728294561D8755B0009EB19A /* Table+CoreDataProperties.swift */; };
+		728294611D8755B0009EB19A /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728294571D8755B0009EB19A /* Table.swift */; };
+		728294621D8755B0009EB19A /* BillItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728294581D8755B0009EB19A /* BillItem+CoreDataProperties.swift */; };
+		728294631D8755B0009EB19A /* BillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728294591D8755B0009EB19A /* BillItem.swift */; };
+		728294641D8755B0009EB19A /* Floor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282945A1D8755B0009EB19A /* Floor+CoreDataProperties.swift */; };
+		728294651D8755B0009EB19A /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282945B1D8755B0009EB19A /* Floor.swift */; };
+		728294661D8755B0009EB19A /* Bill+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282945C1D8755B0009EB19A /* Bill+CoreDataProperties.swift */; };
+		728294671D8755B0009EB19A /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282945D1D8755B0009EB19A /* Bill.swift */; };
+		728294681D8755B0009EB19A /* Party+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282945E1D8755B0009EB19A /* Party+CoreDataProperties.swift */; };
+		728294691D8755B0009EB19A /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282945F1D8755B0009EB19A /* Party.swift */; };
+		7282946E1D8764B1009EB19A /* SampleDatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7282946D1D8764AB009EB19A /* SampleDatabase.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,17 @@
 		728294461D8752A2009EB19A /* CoreDataSerializeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataSerializeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7282944A1D8752A2009EB19A /* CoreDataSerializeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSerializeTests.swift; sourceTree = "<group>"; };
 		7282944C1D8752A2009EB19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728294561D8755B0009EB19A /* Table+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Table+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		728294571D8755B0009EB19A /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		728294581D8755B0009EB19A /* BillItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BillItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		728294591D8755B0009EB19A /* BillItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillItem.swift; sourceTree = "<group>"; };
+		7282945A1D8755B0009EB19A /* Floor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Floor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7282945B1D8755B0009EB19A /* Floor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
+		7282945C1D8755B0009EB19A /* Bill+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bill+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7282945D1D8755B0009EB19A /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		7282945E1D8755B0009EB19A /* Party+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Party+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7282945F1D8755B0009EB19A /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		7282946D1D8764AB009EB19A /* SampleDatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleDatabase.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +103,9 @@
 			children = (
 				728294321D8752A1009EB19A /* AppDelegate.swift */,
 				728294341D8752A1009EB19A /* ViewController.swift */,
-				728294361D8752A1009EB19A /* Main.storyboard */,
-				7282943C1D8752A1009EB19A /* Assets.xcassets */,
-				7282943E1D8752A1009EB19A /* LaunchScreen.storyboard */,
-				728294411D8752A1009EB19A /* Info.plist */,
 				728294391D8752A1009EB19A /* CoreDataSerialize.xcdatamodeld */,
+				728294551D87558C009EB19A /* Managed Objects */,
+				7282946A1D8757F0009EB19A /* Resources */,
 			);
 			path = CoreDataSerialize;
 			sourceTree = "<group>";
@@ -97,6 +117,35 @@
 				7282944C1D8752A2009EB19A /* Info.plist */,
 			);
 			path = CoreDataSerializeTests;
+			sourceTree = "<group>";
+		};
+		728294551D87558C009EB19A /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				728294561D8755B0009EB19A /* Table+CoreDataProperties.swift */,
+				728294571D8755B0009EB19A /* Table.swift */,
+				728294581D8755B0009EB19A /* BillItem+CoreDataProperties.swift */,
+				728294591D8755B0009EB19A /* BillItem.swift */,
+				7282945A1D8755B0009EB19A /* Floor+CoreDataProperties.swift */,
+				7282945B1D8755B0009EB19A /* Floor.swift */,
+				7282945C1D8755B0009EB19A /* Bill+CoreDataProperties.swift */,
+				7282945D1D8755B0009EB19A /* Bill.swift */,
+				7282945E1D8755B0009EB19A /* Party+CoreDataProperties.swift */,
+				7282945F1D8755B0009EB19A /* Party.swift */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		7282946A1D8757F0009EB19A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7282946D1D8764AB009EB19A /* SampleDatabase.sqlite */,
+				728294361D8752A1009EB19A /* Main.storyboard */,
+				7282943C1D8752A1009EB19A /* Assets.xcassets */,
+				7282943E1D8752A1009EB19A /* LaunchScreen.storyboard */,
+				728294411D8752A1009EB19A /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7282946E1D8764B1009EB19A /* SampleDatabase.sqlite in Resources */,
 				728294401D8752A1009EB19A /* LaunchScreen.storyboard in Resources */,
 				7282943D1D8752A1009EB19A /* Assets.xcassets in Resources */,
 				728294381D8752A1009EB19A /* Main.storyboard in Resources */,
@@ -199,8 +249,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728294651D8755B0009EB19A /* Floor.swift in Sources */,
+				728294671D8755B0009EB19A /* Bill.swift in Sources */,
+				728294601D8755B0009EB19A /* Table+CoreDataProperties.swift in Sources */,
+				728294611D8755B0009EB19A /* Table.swift in Sources */,
 				728294351D8752A1009EB19A /* ViewController.swift in Sources */,
+				728294631D8755B0009EB19A /* BillItem.swift in Sources */,
+				728294621D8755B0009EB19A /* BillItem+CoreDataProperties.swift in Sources */,
+				728294661D8755B0009EB19A /* Bill+CoreDataProperties.swift in Sources */,
+				728294681D8755B0009EB19A /* Party+CoreDataProperties.swift in Sources */,
 				7282943B1D8752A1009EB19A /* CoreDataSerialize.xcdatamodeld in Sources */,
+				728294691D8755B0009EB19A /* Party.swift in Sources */,
+				728294641D8755B0009EB19A /* Floor+CoreDataProperties.swift in Sources */,
 				728294331D8752A1009EB19A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

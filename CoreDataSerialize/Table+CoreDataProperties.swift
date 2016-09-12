@@ -14,10 +14,10 @@ import CoreData
 
 extension Table {
 
-    @NSManaged var numberOfSeats: NSNumber?
-    @NSManaged var uuid: String?
-    @NSManaged var name: String?
-    @NSManaged var floor: NSManagedObject?
-    @NSManaged var party: NSManagedObject?
+    @NSManaged var numberOfSeats: Int16
+    @NSManaged var uuid: String
+    @NSManaged var name: String
+    @NSManaged var floor: Floor
+    @NSManaged var party: Party?
 
 }

@@ -14,10 +14,10 @@ import CoreData
 
 extension Party {
 
-    @NSManaged var name: String?
-    @NSManaged var orderNumber: String?
-    @NSManaged var uuid: String?
-    @NSManaged var bills: NSSet?
-    @NSManaged var table: Table?
+    @NSManaged var name: String
+    @NSManaged var orderNumber: String
+    @NSManaged var uuid: String
+    @NSManaged var bills: Set<Bill>?
+    @NSManaged var table: Table
 
 }

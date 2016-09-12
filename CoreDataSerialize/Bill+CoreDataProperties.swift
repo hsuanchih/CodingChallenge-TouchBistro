@@ -14,11 +14,11 @@ import CoreData
 
 extension Bill {
 
-    @NSManaged var billNumber: String?
-    @NSManaged var restaurantName: String?
-    @NSManaged var waiterName: String?
-    @NSManaged var uuid: String?
-    @NSManaged var party: NSManagedObject?
-    @NSManaged var billItems: NSSet?
+    @NSManaged var billNumber: String
+    @NSManaged var restaurantName: String
+    @NSManaged var waiterName: String
+    @NSManaged var uuid: String
+    @NSManaged var party: Party
+    @NSManaged var billItems: Set<BillItem>?
 
 }

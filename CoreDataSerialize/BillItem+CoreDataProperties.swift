@@ -14,10 +14,10 @@ import CoreData
 
 extension BillItem {
 
-    @NSManaged var name: String?
-    @NSManaged var quantity: NSDecimalNumber?
-    @NSManaged var unitPrice: NSDecimalNumber?
-    @NSManaged var uuid: String?
-    @NSManaged var bill: NSManagedObject?
+    @NSManaged var name: String
+    @NSManaged var quantity: NSDecimalNumber
+    @NSManaged var unitPrice: NSDecimalNumber
+    @NSManaged var uuid: String
+    @NSManaged var bill: Bill
 
 }

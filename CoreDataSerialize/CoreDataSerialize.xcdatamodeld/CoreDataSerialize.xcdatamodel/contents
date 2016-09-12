@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Bill" representedClassName=".Bill" syncable="YES">
+        <attribute name="billNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="restaurantName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="waiterName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="billItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BillItem" inverseName="bill" inverseEntity="BillItem" syncable="YES"/>
+        <relationship name="party" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Party" inverseName="bills" inverseEntity="Party" syncable="YES"/>
+    </entity>
+    <entity name="BillItem" representedClassName=".BillItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="unitPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bill" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bill" inverseName="billItems" inverseEntity="Bill" syncable="YES"/>
+    </entity>
+    <entity name="Floor" representedClassName=".Floor" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tables" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Table" inverseName="floor" inverseEntity="Table" syncable="YES"/>
+    </entity>
+    <entity name="Party" representedClassName=".Party" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bill" inverseName="party" inverseEntity="Bill" syncable="YES"/>
+        <relationship name="table" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Table" inverseName="party" inverseEntity="Table" syncable="YES"/>
+    </entity>
+    <entity name="Table" representedClassName=".Table" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfSeats" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="floor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Floor" inverseName="tables" inverseEntity="Floor" syncable="YES"/>
+        <relationship name="party" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Party" inverseName="table" inverseEntity="Party" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Floor" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Table" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="Party" positionX="-45" positionY="54" width="128" height="120"/>
+        <element name="Bill" positionX="-27" positionY="81" width="128" height="135"/>
+        <element name="BillItem" positionX="-18" positionY="108" width="128" height="120"/>
+    </elements>
 </model>
