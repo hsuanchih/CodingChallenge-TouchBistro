@@ -25,6 +25,8 @@
 		728294681D8755B0009EB19A /* Party+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282945E1D8755B0009EB19A /* Party+CoreDataProperties.swift */; };
 		728294691D8755B0009EB19A /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282945F1D8755B0009EB19A /* Party.swift */; };
 		7282946E1D8764B1009EB19A /* SampleDatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7282946D1D8764AB009EB19A /* SampleDatabase.sqlite */; };
+		728294701D885938009EB19A /* NSManagedObject+Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7282946F1D885938009EB19A /* NSManagedObject+Serialize.swift */; };
+		728294721D886041009EB19A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 728294711D886041009EB19A /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		7282945E1D8755B0009EB19A /* Party+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Party+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7282945F1D8755B0009EB19A /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		7282946D1D8764AB009EB19A /* SampleDatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleDatabase.sqlite; sourceTree = "<group>"; };
+		7282946F1D885938009EB19A /* NSManagedObject+Serialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Serialize.swift"; sourceTree = "<group>"; };
+		728294711D886041009EB19A /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		728294311D8752A1009EB19A /* CoreDataSerialize */ = {
 			isa = PBXGroup;
 			children = (
+				7282946F1D885938009EB19A /* NSManagedObject+Serialize.swift */,
 				728294321D8752A1009EB19A /* AppDelegate.swift */,
 				728294341D8752A1009EB19A /* ViewController.swift */,
 				728294391D8752A1009EB19A /* CoreDataSerialize.xcdatamodeld */,
@@ -139,6 +144,7 @@
 		7282946A1D8757F0009EB19A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				728294711D886041009EB19A /* data.json */,
 				7282946D1D8764AB009EB19A /* SampleDatabase.sqlite */,
 				728294361D8752A1009EB19A /* Main.storyboard */,
 				7282943C1D8752A1009EB19A /* Assets.xcassets */,
@@ -231,6 +237,7 @@
 				7282946E1D8764B1009EB19A /* SampleDatabase.sqlite in Resources */,
 				728294401D8752A1009EB19A /* LaunchScreen.storyboard in Resources */,
 				7282943D1D8752A1009EB19A /* Assets.xcassets in Resources */,
+				728294721D886041009EB19A /* data.json in Resources */,
 				728294381D8752A1009EB19A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +266,7 @@
 				728294661D8755B0009EB19A /* Bill+CoreDataProperties.swift in Sources */,
 				728294681D8755B0009EB19A /* Party+CoreDataProperties.swift in Sources */,
 				7282943B1D8752A1009EB19A /* CoreDataSerialize.xcdatamodeld in Sources */,
+				728294701D885938009EB19A /* NSManagedObject+Serialize.swift in Sources */,
 				728294691D8755B0009EB19A /* Party.swift in Sources */,
 				728294641D8755B0009EB19A /* Floor+CoreDataProperties.swift in Sources */,
 				728294331D8752A1009EB19A /* AppDelegate.swift in Sources */,

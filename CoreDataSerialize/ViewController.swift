@@ -95,6 +95,15 @@ class ViewController: UIViewController {
         // This project is setup with a Sample Database. Fetch the first floor and print out its serialized dictionary
         let request = NSFetchRequest(entityName: "Floor")
         let floor = try! context.executeFetchRequest(request).first as! Floor
+        
+        let dictionary = floor.dictionaryRepresentation() // fill in implementation
+        
+        let jsonData = try! NSJSONSerialization.dataWithJSONObject(dictionary, options:NSJSONWritingOptions.PrettyPrinted)
+        let string = String(data: jsonData, encoding: NSUTF8StringEncoding)!
+        print(string)
+        
+        // see 'data.json' file for example json output. Note: formatting and order can be different
+
     }
 }
 
