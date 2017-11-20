@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         // A Bill has 1 or more BillItems. A BillItem is one line on a receipt. eg. '1x Burger $7.99'
         
         // Write a method that serializes a given NSManagedObject and its relationships into a dictionary of type
-        // [String: [String: AnyObject]]
+        // [String: [String: Any]]
         // This is a dictionary where the key is a String, and the value is another dictionary of keys/values
         // every entity has a uuid that can be used as the key
         
@@ -93,18 +93,16 @@ class ViewController: UIViewController {
         // In this example, if Bill or BillItem has other relationships and they are not nil, they would be included in this dictionary
         
         // This project is setup with a Sample Database. Fetch the first floor and print out its serialized dictionary
-        //let request = Floor.fetchRequest()
         let request = NSFetchRequest<Floor>(entityName: "Floor")
         let floor = try! context.fetch(request).first!
         
         let dictionary = floor.dictionaryRepresentation() // fill in implementation
         
-        let jsonData = try! JSONSerialization.data(withJSONObject: dictionary, options: .prettyPrinted)
-        let string = String(data: jsonData, encoding: String.Encoding.utf8)!
+        let jsonData = try! JSONSerialization.data(withJSONObject: dictionary, options: [.prettyPrinted, .sortedKeys])
+        let string = String(data: jsonData, encoding: .utf8)!
         print(string)
         
-        // see 'data.json' file for example json output. Note: formatting and order can be different
-
+        // see 'data.json' file for example json output.
     }
 }
 
