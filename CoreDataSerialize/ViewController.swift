@@ -12,8 +12,8 @@ import CoreData
 class ViewController: UIViewController {
 
     var context: NSManagedObjectContext {
-        let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        return delegate.managedObjectContext
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        return delegate.persistentContainer.viewContext
     }
 
     override func viewDidLoad() {
@@ -93,13 +93,14 @@ class ViewController: UIViewController {
         // In this example, if Bill or BillItem has other relationships and they are not nil, they would be included in this dictionary
         
         // This project is setup with a Sample Database. Fetch the first floor and print out its serialized dictionary
-        let request = NSFetchRequest(entityName: "Floor")
-        let floor = try! context.executeFetchRequest(request).first as! Floor
+        //let request = Floor.fetchRequest()
+        let request = NSFetchRequest<Floor>(entityName: "Floor")
+        let floor = try! context.fetch(request).first!
         
         let dictionary = floor.dictionaryRepresentation() // fill in implementation
         
-        let jsonData = try! NSJSONSerialization.dataWithJSONObject(dictionary, options:NSJSONWritingOptions.PrettyPrinted)
-        let string = String(data: jsonData, encoding: NSUTF8StringEncoding)!
+        let jsonData = try! JSONSerialization.data(withJSONObject: dictionary, options: .prettyPrinted)
+        let string = String(data: jsonData, encoding: String.Encoding.utf8)!
         print(string)
         
         // see 'data.json' file for example json output. Note: formatting and order can be different
