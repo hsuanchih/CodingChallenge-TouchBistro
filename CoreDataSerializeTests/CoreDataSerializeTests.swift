@@ -29,4 +29,15 @@ class CoreDataSerializeTests: XCTestCase {
         let string = String(data: jsonData, encoding: .utf8)!
         XCTAssertTrue(string == sampleJSONString())
     }
+    
+    func testExampl2() {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let context = delegate.persistentContainer.viewContext
+        let request = NSFetchRequest<Table>(entityName: "Table")
+        let table = try! context.fetch(request).first!
+        let dictionary = table.dictionaryRepresentation() // fill in implementation
+        let jsonData = try! JSONSerialization.data(withJSONObject: dictionary, options: [.prettyPrinted, .sortedKeys])
+        let string = String(data: jsonData, encoding: .utf8)!
+        XCTAssertTrue(string == sampleJSONString())
+    }
 }
