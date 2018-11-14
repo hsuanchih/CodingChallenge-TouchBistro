@@ -92,6 +92,11 @@ class ViewController: UIViewController {
         // The final dictionary will have dictionary representations for every NSManagedObject linked to the original managed object
         // In this example, if Bill or BillItem has other relationships and they are not nil, they would be included in this dictionary
         
+        // Helpful APIs
+        // https://developer.apple.com/documentation/coredata/nsentitydescription
+        // https://developer.apple.com/documentation/coredata/nsattributedescription
+        // https://developer.apple.com/documentation/coredata/nsrelationshipdescription
+        
         // This project is setup with a Sample Database. Fetch the first floor and print out its serialized dictionary
         let request = NSFetchRequest<Floor>(entityName: "Floor")
         let floor = try! context.fetch(request).first!
