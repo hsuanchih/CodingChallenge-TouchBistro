@@ -62,7 +62,7 @@ class ViewController: UIViewController {
                             "restaurantName" = "Sample Cafe"
                             "waiterName" = "Jeeves"
                             "billNumber" = "1"
-                            "billItems" = ["ASDFG", "ZXCVB"]
+                            "billItems" = ["ASDFG", "ZXCVB"] // keys are sorted alphabetically
                         },
  
             "ASDFG" =   {
