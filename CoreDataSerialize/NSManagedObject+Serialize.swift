@@ -12,7 +12,8 @@ import CoreData
 extension NSManagedObject {
 
     func dictionaryRepresentation() -> [String: [String: Any]] {
-        // fill in implementation
+        precondition(self is Encodable)
+        do { return try (self as! Encodable).dictionaryRepresentation() } catch { print(error) }
         return [:]
     }
 }
