@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47D91797234CEE3E009DD7B1 /* Encodable+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D91796234CEE3E009DD7B1 /* Encodable+Serialization.swift */; };
+		47D91799234CEF0A009DD7B1 /* UUIDEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D91798234CEF0A009DD7B1 /* UUIDEncodable.swift */; };
+		47D9179B234CEF46009DD7B1 /* Encoder+UUIDContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9179A234CEF46009DD7B1 /* Encoder+UUIDContainer.swift */; };
+		47D9179D234CEFA4009DD7B1 /* KeyedEncodingContainer+EncodeUUIDEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9179C234CEFA4009DD7B1 /* KeyedEncodingContainer+EncodeUUIDEncodable.swift */; };
+		47D917A0234CF070009DD7B1 /* GraphCycleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D9179F234CF070009DD7B1 /* GraphCycleDetector.swift */; };
+		47D917A2234CF0CF009DD7B1 /* Bool+Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D917A1234CF0CF009DD7B1 /* Bool+Toggle.swift */; };
+		47D917A4234CF7AF009DD7B1 /* data_fp_modified.json in Resources */ = {isa = PBXBuildFile; fileRef = 47D917A3234CF7AF009DD7B1 /* data_fp_modified.json */; };
 		728294331D8752A1009EB19A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728294321D8752A1009EB19A /* AppDelegate.swift */; };
 		728294351D8752A1009EB19A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728294341D8752A1009EB19A /* ViewController.swift */; };
 		728294381D8752A1009EB19A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728294361D8752A1009EB19A /* Main.storyboard */; };
@@ -40,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47D91796234CEE3E009DD7B1 /* Encodable+Serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Serialization.swift"; sourceTree = "<group>"; };
+		47D91798234CEF0A009DD7B1 /* UUIDEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDEncodable.swift; sourceTree = "<group>"; };
+		47D9179A234CEF46009DD7B1 /* Encoder+UUIDContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encoder+UUIDContainer.swift"; sourceTree = "<group>"; };
+		47D9179C234CEFA4009DD7B1 /* KeyedEncodingContainer+EncodeUUIDEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedEncodingContainer+EncodeUUIDEncodable.swift"; sourceTree = "<group>"; };
+		47D9179F234CF070009DD7B1 /* GraphCycleDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCycleDetector.swift; sourceTree = "<group>"; };
+		47D917A1234CF0CF009DD7B1 /* Bool+Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Toggle.swift"; sourceTree = "<group>"; };
+		47D917A3234CF7AF009DD7B1 /* data_fp_modified.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; lineEnding = 0; path = data_fp_modified.json; sourceTree = "<group>"; };
 		7282942F1D8752A1009EB19A /* CoreDataSerialize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSerialize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728294321D8752A1009EB19A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		728294341D8752A1009EB19A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +98,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47D91795234CEDF8009DD7B1 /* Encode */ = {
+			isa = PBXGroup;
+			children = (
+				47D91796234CEE3E009DD7B1 /* Encodable+Serialization.swift */,
+				47D91798234CEF0A009DD7B1 /* UUIDEncodable.swift */,
+				47D9179A234CEF46009DD7B1 /* Encoder+UUIDContainer.swift */,
+				47D9179C234CEFA4009DD7B1 /* KeyedEncodingContainer+EncodeUUIDEncodable.swift */,
+			);
+			path = Encode;
+			sourceTree = "<group>";
+		};
+		47D9179E234CF050009DD7B1 /* GraphCycleDetector */ = {
+			isa = PBXGroup;
+			children = (
+				47D9179F234CF070009DD7B1 /* GraphCycleDetector.swift */,
+				47D917A1234CF0CF009DD7B1 /* Bool+Toggle.swift */,
+			);
+			path = GraphCycleDetector;
+			sourceTree = "<group>";
+		};
 		728294261D8752A1009EB19A = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +139,8 @@
 		728294311D8752A1009EB19A /* CoreDataSerialize */ = {
 			isa = PBXGroup;
 			children = (
+				47D9179E234CF050009DD7B1 /* GraphCycleDetector */,
+				47D91795234CEDF8009DD7B1 /* Encode */,
 				7282946F1D885938009EB19A /* NSManagedObject+Serialize.swift */,
 				728294321D8752A1009EB19A /* AppDelegate.swift */,
 				728294341D8752A1009EB19A /* ViewController.swift */,
@@ -150,6 +186,7 @@
 				7282943C1D8752A1009EB19A /* Assets.xcassets */,
 				7282943E1D8752A1009EB19A /* LaunchScreen.storyboard */,
 				728294411D8752A1009EB19A /* Info.plist */,
+				47D917A3234CF7AF009DD7B1 /* data_fp_modified.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -215,6 +252,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -238,6 +276,7 @@
 				728294401D8752A1009EB19A /* LaunchScreen.storyboard in Resources */,
 				7282943D1D8752A1009EB19A /* Assets.xcassets in Resources */,
 				728294721D886041009EB19A /* data.json in Resources */,
+				47D917A4234CF7AF009DD7B1 /* data_fp_modified.json in Resources */,
 				728294381D8752A1009EB19A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D9179D234CEFA4009DD7B1 /* KeyedEncodingContainer+EncodeUUIDEncodable.swift in Sources */,
 				728294651D8755B0009EB19A /* Floor.swift in Sources */,
 				728294671D8755B0009EB19A /* Bill.swift in Sources */,
+				47D91799234CEF0A009DD7B1 /* UUIDEncodable.swift in Sources */,
 				728294601D8755B0009EB19A /* Table+CoreDataProperties.swift in Sources */,
+				47D9179B234CEF46009DD7B1 /* Encoder+UUIDContainer.swift in Sources */,
 				728294611D8755B0009EB19A /* Table.swift in Sources */,
 				728294351D8752A1009EB19A /* ViewController.swift in Sources */,
 				728294631D8755B0009EB19A /* BillItem.swift in Sources */,
@@ -266,10 +308,13 @@
 				728294661D8755B0009EB19A /* Bill+CoreDataProperties.swift in Sources */,
 				728294681D8755B0009EB19A /* Party+CoreDataProperties.swift in Sources */,
 				7282943B1D8752A1009EB19A /* CoreDataSerialize.xcdatamodeld in Sources */,
+				47D917A2234CF0CF009DD7B1 /* Bool+Toggle.swift in Sources */,
 				728294701D885938009EB19A /* NSManagedObject+Serialize.swift in Sources */,
 				728294691D8755B0009EB19A /* Party.swift in Sources */,
+				47D91797234CEE3E009DD7B1 /* Encodable+Serialization.swift in Sources */,
 				728294641D8755B0009EB19A /* Floor+CoreDataProperties.swift in Sources */,
 				728294331D8752A1009EB19A /* AppDelegate.swift in Sources */,
+				47D917A0234CF070009DD7B1 /* GraphCycleDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
