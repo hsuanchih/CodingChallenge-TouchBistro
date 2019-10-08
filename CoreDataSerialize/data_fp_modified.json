@@ -25,14 +25,14 @@
     "bill" : "4536E3E0-8C0C-49B2-BE9C-1C26DB4A6462",
     "name" : "Eggs",
     "quantity" : 3,
-    "unitPrice" : 2.99,
+    "unitPrice" : 2.9900000000000002,
     "uuid" : "61A5023B-43DF-4E6D-9B4E-651DC3EA00B8"
   },
   "74CFC7B3-20E7-4500-ADBC-0FD54B970ED2" : {
     "bill" : "B176ECD2-6CD6-4E2E-945F-84AFD0AF4316",
     "name" : "Fries",
     "quantity" : 1,
-    "unitPrice" : 3.99,
+    "unitPrice" : 3.9900000000000002,
     "uuid" : "74CFC7B3-20E7-4500-ADBC-0FD54B970ED2"
   },
   "97F5F8E2-223A-4615-8ED0-038A60879110" : {
@@ -74,7 +74,7 @@
     "bill" : "B176ECD2-6CD6-4E2E-945F-84AFD0AF4316",
     "name" : "Burger",
     "quantity" : 1,
-    "unitPrice" : 7.99,
+    "unitPrice" : 7.9900000000000002,
     "uuid" : "B109CFCA-9F8B-4922-A17D-E93370730BA0"
   },
   "B176ECD2-6CD6-4E2E-945F-84AFD0AF4316" : {

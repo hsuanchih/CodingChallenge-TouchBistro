@@ -13,7 +13,7 @@ import CoreData
 class CoreDataSerializeTests: XCTestCase {
     
     func sampleJSONString() -> String {
-        let url = Bundle.main.url(forResource: "data", withExtension: "json")!
+        let url = Bundle.main.url(forResource: "data_fp_modified", withExtension: "json")!
         let data = try! Data(contentsOf: url)
         let string = String(data: data, encoding: .utf8)!
         return string
