@@ -9,9 +9,12 @@
 import Foundation
 import CoreData
 
+#if false
 extension NSManagedObject {
 
     func dictionaryRepresentation() -> [String: [String: Any]] {
-        return (self as? DictionaryRespresentable)?.dictionaryRepresentation() ?? [:]
+        // fill in implementation
+        return [:]
     }
 }
+#endif
