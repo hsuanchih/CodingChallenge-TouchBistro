@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4731037E235FB17B008A5C50 /* DictionaryRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731037D235FB17B008A5C50 /* DictionaryRepresentable.swift */; };
+		47310380235FF0A8008A5C50 /* DictionaryRepresentable+NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731037F235FF0A8008A5C50 /* DictionaryRepresentable+NSManagedObject.swift */; };
+		47310382235FF143008A5C50 /* DictionaryRepresentable+Introspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47310381235FF143008A5C50 /* DictionaryRepresentable+Introspectable.swift */; };
+		47310384235FF219008A5C50 /* UUIDEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47310383235FF219008A5C50 /* UUIDEncodable.swift */; };
+		47310386235FF255008A5C50 /* Dictionary+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47310385235FF255008A5C50 /* Dictionary+Merge.swift */; };
 		728294331D8752A1009EB19A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728294321D8752A1009EB19A /* AppDelegate.swift */; };
 		728294351D8752A1009EB19A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728294341D8752A1009EB19A /* ViewController.swift */; };
 		728294381D8752A1009EB19A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728294361D8752A1009EB19A /* Main.storyboard */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4731037D235FB17B008A5C50 /* DictionaryRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRepresentable.swift; sourceTree = "<group>"; };
+		4731037F235FF0A8008A5C50 /* DictionaryRepresentable+NSManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DictionaryRepresentable+NSManagedObject.swift"; sourceTree = "<group>"; };
+		47310381235FF143008A5C50 /* DictionaryRepresentable+Introspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DictionaryRepresentable+Introspectable.swift"; sourceTree = "<group>"; };
+		47310383235FF219008A5C50 /* UUIDEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDEncodable.swift; sourceTree = "<group>"; };
+		47310385235FF255008A5C50 /* Dictionary+Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Merge.swift"; sourceTree = "<group>"; };
 		7282942F1D8752A1009EB19A /* CoreDataSerialize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSerialize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728294321D8752A1009EB19A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		728294341D8752A1009EB19A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,9 +94,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4731037C235FB165008A5C50 /* DictionaryRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				4731037D235FB17B008A5C50 /* DictionaryRepresentable.swift */,
+				4731037F235FF0A8008A5C50 /* DictionaryRepresentable+NSManagedObject.swift */,
+				47310381235FF143008A5C50 /* DictionaryRepresentable+Introspectable.swift */,
+				47310383235FF219008A5C50 /* UUIDEncodable.swift */,
+				47310385235FF255008A5C50 /* Dictionary+Merge.swift */,
+			);
+			path = DictionaryRepresentable;
+			sourceTree = "<group>";
+		};
 		728294261D8752A1009EB19A = {
 			isa = PBXGroup;
 			children = (
+				4731037C235FB165008A5C50 /* DictionaryRepresentable */,
 				728294311D8752A1009EB19A /* CoreDataSerialize */,
 				728294491D8752A2009EB19A /* CoreDataSerializeTests */,
 				728294301D8752A1009EB19A /* Products */,
@@ -215,6 +238,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -256,15 +280,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47310384235FF219008A5C50 /* UUIDEncodable.swift in Sources */,
 				728294651D8755B0009EB19A /* Floor.swift in Sources */,
 				728294671D8755B0009EB19A /* Bill.swift in Sources */,
 				728294601D8755B0009EB19A /* Table+CoreDataProperties.swift in Sources */,
+				47310382235FF143008A5C50 /* DictionaryRepresentable+Introspectable.swift in Sources */,
 				728294611D8755B0009EB19A /* Table.swift in Sources */,
 				728294351D8752A1009EB19A /* ViewController.swift in Sources */,
 				728294631D8755B0009EB19A /* BillItem.swift in Sources */,
 				728294621D8755B0009EB19A /* BillItem+CoreDataProperties.swift in Sources */,
 				728294661D8755B0009EB19A /* Bill+CoreDataProperties.swift in Sources */,
+				47310386235FF255008A5C50 /* Dictionary+Merge.swift in Sources */,
+				4731037E235FB17B008A5C50 /* DictionaryRepresentable.swift in Sources */,
 				728294681D8755B0009EB19A /* Party+CoreDataProperties.swift in Sources */,
+				47310380235FF0A8008A5C50 /* DictionaryRepresentable+NSManagedObject.swift in Sources */,
 				7282943B1D8752A1009EB19A /* CoreDataSerialize.xcdatamodeld in Sources */,
 				728294701D885938009EB19A /* NSManagedObject+Serialize.swift in Sources */,
 				728294691D8755B0009EB19A /* Party.swift in Sources */,

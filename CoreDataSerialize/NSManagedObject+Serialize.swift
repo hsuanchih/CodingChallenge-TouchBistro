@@ -12,7 +12,6 @@ import CoreData
 extension NSManagedObject {
 
     func dictionaryRepresentation() -> [String: [String: Any]] {
-        // fill in implementation
-        return [:]
+        return (self as? DictionaryRespresentable)?.dictionaryRepresentation() ?? [:]
     }
 }
